@@ -333,12 +333,12 @@ const Index = () => {
                    <a href="https://www.instagram.com/binrashidX" target="_blank" rel="noopener noreferrer">
                      <Card className="bg-muted/50 border-border hover:shadow-md transition-all hover:scale-105">
                        <CardContent className="p-4 text-center">
-                         <div className="w-12 h-12 mx-auto mb-2 rounded-xl overflow-hidden bg-gradient-to-r from-purple-500 via-pink-500 to-orange-500 flex items-center justify-center">
-                           <div className="w-8 h-8 border-2 border-white rounded-lg flex items-center justify-center">
-                             <div className="w-3 h-3 border border-white rounded-full flex items-center justify-center">
-                               <div className="w-1 h-1 bg-white rounded-full"></div>
-                             </div>
-                           </div>
+                         <div className="w-12 h-12 mx-auto mb-2 rounded-xl overflow-hidden">
+                           <img 
+                             src="/hamad-uploads/instagram-icon.png" 
+                             alt="Instagram" 
+                             className="w-full h-full object-cover"
+                           />
                          </div>
                          <h4 className="font-bold text-card-foreground text-sm">Instagram</h4>
                        </CardContent>
