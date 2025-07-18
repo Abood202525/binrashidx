@@ -288,7 +288,6 @@ const Index = () => {
                            />
                          </div>
                           <h4 className="font-bold text-card-foreground text-sm">Discord</h4>
-                          <p className="text-muted-foreground text-xs">2.5k متابع</p>
                        </CardContent>
                      </Card>
                    </a>
@@ -304,7 +303,6 @@ const Index = () => {
                            />
                          </div>
                           <h4 className="font-bold text-card-foreground text-sm">Snapchat</h4>
-                          <p className="text-muted-foreground text-xs">12k متابع</p>
                        </CardContent>
                      </Card>
                    </a>
@@ -320,7 +318,6 @@ const Index = () => {
                            </div>
                          </div>
                          <h4 className="font-bold text-card-foreground text-sm">Instagram</h4>
-                         <p className="text-muted-foreground text-xs">15k متابع</p>
                        </CardContent>
                      </Card>
                    </a>
@@ -336,7 +333,6 @@ const Index = () => {
                            />
                          </div>
                           <h4 className="font-bold text-card-foreground text-sm">TikTok</h4>
-                          <p className="text-muted-foreground text-xs">45k متابع</p>
                        </CardContent>
                      </Card>
                    </a>
