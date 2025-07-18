@@ -19,7 +19,7 @@ const App = () => (
           <Route path="/">
             <Index />
           </Route>
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+          {/* Add custom routes here */}
           <Route>
             <NotFound />
           </Route>

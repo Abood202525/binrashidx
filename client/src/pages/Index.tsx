@@ -52,8 +52,8 @@ const socialLinks = [
   {
     icon: <MessageCircle className="w-6 h-6" />,
     title: "Discord",
-    username: "4TFfhSc",
-    href: "https://discord.gg/4TFfhSc",
+    username: "9YBgxAEWge",
+    href: "https://discord.gg/9YBgxAEWge",
     color: "#5865F2"
   },
   {
@@ -300,7 +300,7 @@ const Index = () => {
                   <h2 className="text-2xl font-bold text-card-foreground">التواصل الاجتماعي</h2>
                 </div>
                  <div className="grid grid-cols-2 gap-4">
-                   <a href="https://discord.gg/4TFfhSc" target="_blank" rel="noopener noreferrer">
+                   <a href="https://discord.gg/9YBgxAEWge" target="_blank" rel="noopener noreferrer">
                      <Card className="bg-muted/50 border-border hover:shadow-md transition-all hover:scale-105">
                        <CardContent className="p-4 text-center">
                          <div className="w-12 h-12 mx-auto mb-2 rounded-xl overflow-hidden">

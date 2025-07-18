@@ -1,17 +1,17 @@
-# Arabic Portfolio Website
+# حمد ابن راشد - Portfolio Website
 
 ## Overview
-This is an Arabic portfolio website for حمد الذهلي (Hamad Al-Dhahli), a 19-year-old content creator. The website showcases his social media presence, skills, education, and services.
+Personal portfolio website for حمد ابن راشد الذهلي (Hamad Bin Rashid Al-Dhahli), a 19-year-old content creator and cybersecurity student. Built with React and modern web technologies to showcase social media presence, skills, certifications, and services.
 
 ## Recent Changes
 - **Date:** July 18, 2025
-- **Migration from Lovable to Replit completed:**
-  - Replaced react-router-dom with wouter routing system
-  - Fixed routing components (App.tsx, NotFound.tsx)
-  - Installed missing dependencies (sonner)
-  - Created queryClient library for React Query
-  - Updated NotFound component to use Replit's design system colors
-  - Application now running successfully on port 5000
+- **Project Development:**
+  - Built with React, TypeScript, and Tailwind CSS
+  - Implemented interactive FAQ section with collapsible questions
+  - Added social media integration (Instagram, Discord, Snapchat, TikTok)
+  - Created custom Arabic RTL design with dark/light theme support
+  - Integrated QR code for contact purposes
+  - Updated Discord server link to: https://discord.gg/9YBgxAEWge
 
 ## Project Architecture
 - **Frontend:** React with TypeScript
