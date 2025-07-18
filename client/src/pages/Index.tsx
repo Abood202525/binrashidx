@@ -1,6 +1,7 @@
-import { Instagram, Youtube, Music, Gamepad2, Camera, Palette, DollarSign, MessageCircle, Zap, User, Eye, Lightbulb, Heart, Tv, CreditCard } from "lucide-react"
+import { Instagram, Youtube, Music, Gamepad2, Camera, Palette, DollarSign, MessageCircle, Zap, User, Eye, Lightbulb, Heart, Tv, CreditCard, ChevronDown } from "lucide-react"
 import { SocialLink } from "@/components/SocialLink"
 import { ThemeToggle } from "@/components/ThemeToggle"
+import { useState } from "react"
 
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
@@ -98,6 +99,29 @@ const serviceCards = [
   }
 ]
 
+const FAQItem = ({ question, answer }: { question: string; answer: string }) => {
+  const [isOpen, setIsOpen] = useState(false);
+  
+  return (
+    <Card className="bg-muted/50 border-border">
+      <CardContent className="p-0">
+        <button 
+          onClick={() => setIsOpen(!isOpen)}
+          className="w-full p-4 text-right hover:bg-muted/30 transition-colors duration-200 flex items-center justify-between"
+        >
+          <ChevronDown className={`w-5 h-5 text-primary transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`} />
+          <span className="text-sm font-medium text-card-foreground">{question}</span>
+        </button>
+        {isOpen && (
+          <div className="px-4 pb-4 text-right">
+            <p className="text-sm text-muted-foreground leading-relaxed">{answer}</p>
+          </div>
+        )}
+      </CardContent>
+    </Card>
+  );
+};
+
 const Index = () => {
   return (
     <div className="min-h-screen bg-background relative overflow-hidden">
@@ -186,25 +210,24 @@ const Index = () => {
                   <User className="w-6 h-6 text-primary" />
                   <h2 className="text-2xl font-bold font-amiri text-card-foreground">تعرف أكثر عني</h2>
                 </div>
-                <Card className="bg-muted/50 border-border">
-                  <CardContent className="p-6 space-y-4">
-                    <div className="flex items-center gap-3 text-muted-foreground">
-                      <span className="text-sm font-tajawal">خبير سوشيال</span>
-                    </div>
-                    <div className="flex items-center gap-3 text-muted-foreground">
-                      <span className="text-sm font-tajawal">ما أحد يجبرني تتستخدم برنامج معا</span>
-                    </div>
-                    <div className="flex items-center gap-3 text-muted-foreground">
-                      <span className="text-sm font-tajawal">CSS هال عمل تفعيل نظام الاندرويد هو</span>
-                    </div>
-                    <div className="flex items-center gap-3 text-muted-foreground">
-                      <span className="text-sm font-tajawal">هذا أستخدام الذكاء الاصطناعي في حالات المعرضة</span>
-                    </div>
-                    <div className="flex items-center gap-3 text-muted-foreground">
-                      <span className="text-sm font-tajawal">هال اريد خلق عبى يوتيوب او جسداس بشغيل</span>
-                    </div>
-                  </CardContent>
-                </Card>
+                <div className="space-y-4">
+                  <FAQItem 
+                    question="ما المهارة أو الهواية التي أمارسها خارج نطاق العمل؟"
+                    answer="أمارس صناعة المحتوى على منصات التواصل الاجتماعي وأستخدم تصميم الجرافيك كمساحتي للتعبير والإبداع."
+                  />
+                  <FAQItem 
+                    question="ما الشهادات اللي حصلت عليها؟"
+                    answer="(ISC)² Certified in Cybersecurity (CC) • CompTIA Security+ • CompTIA CySA+ (Cybersecurity Analyst) • Certified Ethical Hacker (CEH) • CompTIA PenTest+ • Cisco Certified Support Technician (CCST) • كما شاركت بفعالية في عدد من تحديات CTF (Capture The Flag) التي عززت مهاراتي العملية في التحليل الأمني واختبار الاختراق"
+                  />
+                  <FAQItem 
+                    question="ما أكثر شيء أستمتع به في وقت فراغي؟"
+                    answer="أستمتع كثيرًا بقضاء وقتي في الألعاب"
+                  />
+                  <FAQItem 
+                    question="قهوة ولا شاي؟"
+                    answer="الشاي طبعًا!"
+                  />
+                </div>
               </div>
 
               {/* Skills */}
