@@ -186,7 +186,7 @@ const Index = () => {
                 <div className="relative">
                   <div className="w-80 h-80 md:w-96 md:h-96 rounded-full overflow-hidden border-4 border-primary/30 shadow-2xl">
                     <img
-                      src="/lovable-uploads/0d45b6b8-606e-4644-8029-fd8021884ab4.png"
+                      src="/hamad-uploads/0d45b6b8-606e-4644-8029-fd8021884ab4.png"
                       alt="حمد ابن راشد"
                       className="w-full h-full object-cover"
                     />
@@ -305,7 +305,7 @@ const Index = () => {
                        <CardContent className="p-4 text-center">
                          <div className="w-12 h-12 mx-auto mb-2 rounded-xl overflow-hidden">
                            <img 
-                             src="/lovable-uploads/1f0a532a-d9e1-461a-96e0-ca807e318d11.png" 
+                             src="/hamad-uploads/1f0a532a-d9e1-461a-96e0-ca807e318d11.png" 
                              alt="Discord" 
                              className="w-full h-full object-cover"
                            />
@@ -320,7 +320,7 @@ const Index = () => {
                        <CardContent className="p-4 text-center">
                          <div className="w-12 h-12 mx-auto mb-2 rounded-xl overflow-hidden">
                            <img 
-                             src="/lovable-uploads/1a4aa7ba-dcf6-4877-92a0-9c740f187400.png" 
+                             src="/hamad-uploads/1a4aa7ba-dcf6-4877-92a0-9c740f187400.png" 
                              alt="Snapchat" 
                              className="w-full h-full object-cover"
                            />
@@ -350,7 +350,7 @@ const Index = () => {
                        <CardContent className="p-4 text-center">
                          <div className="w-12 h-12 mx-auto mb-2 rounded-xl overflow-hidden">
                            <img 
-                             src="/lovable-uploads/a87afc62-3f3e-477b-9200-14998c05dee5.png" 
+                             src="/hamad-uploads/a87afc62-3f3e-477b-9200-14998c05dee5.png" 
                              alt="TikTok" 
                              className="w-full h-full object-cover"
                            />
@@ -398,8 +398,12 @@ const Index = () => {
                 <Card className="bg-muted/50 border-border">
                   <CardContent className="p-6 text-center">
                     <p className="text-muted-foreground font-tajawal text-sm mb-4">امسح رمز الـ QR للوصول إلى الانستقرام</p>
-                    <div className="w-32 h-32 mx-auto bg-background border-2 border-border rounded-lg flex items-center justify-center mb-4">
-                      <div className="text-muted-foreground text-xs font-mono">QR CODE</div>
+                    <div className="w-32 h-32 mx-auto bg-background border-2 border-border rounded-lg flex items-center justify-center mb-4 overflow-hidden">
+                      <img 
+                        src="/hamad-uploads/qr-code.png" 
+                        alt="QR Code"
+                        className="w-full h-full object-cover"
+                      />
                     </div>
                     <p className="text-xs text-muted-foreground font-tajawal">CONTACT US</p>
                   </CardContent>
